@@ -1,9 +1,9 @@
-include <iostream>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-
+    setlocale(LC_ALL, "Russian");
     int n;
     cout << "Введите количество элементов массива: ";
     cin >> n;
@@ -31,5 +31,6 @@ int main() {
     }
 
     delete[] arr;
+    system("pause");
     return 0;
 }
