@@ -84,6 +84,7 @@ void countBooksIf(const vector<Book>& library) {
 }
 
 int main() {
+setlocale(LC_ALL, "Russian");
     vector<Book> library = {
         Book("Лев Толстой", "Война и мир", FICTION),
         Book("Фёдор Достоевский", "Преступление и наказание", FICTION),
@@ -96,5 +97,6 @@ int main() {
     countBooksSwitch(library);
     countBooksIf(library);
 
+    system("pause");
     return 0;
 }
